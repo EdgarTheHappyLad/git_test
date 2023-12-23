@@ -8,9 +8,9 @@
 <body>
 
   <h1>Rock Paper Scissors</h1>
-  <button onclick="myMove = 1, pcMove()">Rock</button>
-  <button onclick="myMove = 2, pcMove()">Paper</button>
-  <button onclick="myMove = 3, pcMove()">Scissors</button>
+  <button onclick="myMove = 1, startGame()">Rock</button>
+  <button onclick="myMove = 2, startGame()">Paper</button>
+  <button onclick="myMove = 3, startGame()">Scissors</button>
   <button onclick="resetScore()">Reset score</button>
 
   <p id="myM"></p>
@@ -39,7 +39,7 @@
     }*/
 
 
-    function pcMove() {
+    function startGame() {
       let computerMove = Math.floor(Math.random() * 3 + 1);
 
 
